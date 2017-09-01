@@ -152,6 +152,7 @@ class FirepowerViewFull(StatsView):
                  ("labelFullDpsDrone", lambda: fit.droneDPS, 3, 0, 0, "%s DPS", None),
                  ("labelFullVolleyTotal", lambda: fit.totalVolley, 3, 0, 0, "%s", "Volley: %.1f"),
                  ("labelFullDpsTotal", lambda: fit.totalDPS, 3, 0, 0, "%s", None))
+        print "TOTAL DPS {}".format(fit.totalDPS)
         # See GH issue #
         # if fit is not None and fit.totalYield > 0:
         #    self.miningyield.Show()
